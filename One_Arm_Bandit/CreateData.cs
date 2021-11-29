@@ -13,12 +13,20 @@ namespace One_Arm_Bandit
 
         public List<double> conversion_rates = new List<double>();
 
+        /// <summary>
+        /// Dodaje maszyny z zadanym prawdopodobieństwem wygranej
+        /// </summary>
+        /// <param name="rate"></param>
         public void Add_Rate(double rate)
         { 
             conversion_rates.Add(rate);
         }
         
-
+        /// <summary>
+        /// Tworzy tablicę danych
+        /// </summary>
+        /// <param name="row"></param>
+        /// <returns> zwraca macierz sukcesów/porażek 1/0</returns>
         public Matrix<double> Generated_of_Data(int row)
         {
             int d = conversion_rates.Count();

@@ -12,6 +12,10 @@ namespace One_Arm_Bandit
     {
         List<Parameter_of_Machine> param = new List<Parameter_of_Machine>();
 
+        /// <summary>
+        /// Dodaje maszyny z różnymi prawdopobieństwami wygranej
+        /// </summary>
+        /// <param name="num"></param>
         public void Add_Machine(int num)
         {
             for (int i = 0; i < num; i++)
@@ -20,6 +24,10 @@ namespace One_Arm_Bandit
             }
         }
 
+        /// <summary>
+        /// Sprawdza, która maszyna jest najlepsza
+        /// </summary>
+        /// <param name="df"></param>
         public void Game(Matrix<double> df)
         {
             int N =  df.RowCount; 
@@ -53,6 +61,10 @@ namespace One_Arm_Bandit
             GetStatistic();
         }
 
+
+        /// <summary>
+        /// Wyświetla statystyki maszyn
+        /// </summary>
         public void GetStatistic()
         {
             int num = 0;
