@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace One_Arm_Bandit
 {
-    public class Parameter_of_Machine
+    public class ParameterofMachine
     {
         public int _nPosReward = 1;
         public int _nNegReward = 1;

@@ -10,7 +10,7 @@ namespace One_Arm_Bandit
 {
     public class Enviroment
     {
-        List<Parameter_of_Machine> param = new List<Parameter_of_Machine>();
+        List<ParameterofMachine> param = new List<ParameterofMachine>();
 
         /// <summary>
         /// Dodaje maszyny z różnymi prawdopobieństwami wygranej
@@ -20,7 +20,7 @@ namespace One_Arm_Bandit
         {
             for (int i = 0; i < num; i++)
             {
-                param.Add(new Parameter_of_Machine());
+                param.Add(new ParameterofMachine());
             }
         }
 

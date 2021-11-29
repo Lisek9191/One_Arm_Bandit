@@ -20,8 +20,8 @@ class TestClass
     
 
         CreateData data = new CreateData();
-        List<double> conversionRates = new List<double>() { 0.15, 0.04, 0.13, 0.11, 0.05 };
-        int N = 100000000;
+        List<double> conversionRates = new List<double>() { 0.15, 0.04, 0.13, 0.11, 0.15 , 0.25, 0.34};
+        int N = 10000000;
         foreach (var cr in conversionRates)
         {
             data.Add_Rate(cr);
@@ -29,7 +29,7 @@ class TestClass
 
         var df = data.Generated_of_Data(N);
         Enviroment enviroment = new Enviroment();
-        enviroment.Add_Machine(5);
+        enviroment.Add_Machine(conversionRates.Count);
         enviroment.Game(df);
 
 
